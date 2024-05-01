@@ -1,0 +1,54 @@
+﻿
+
+<div class="row text-center">
+    <h2>System-Gás</h2>
+</div>
+
+<div class="container">
+    <section id="sobre">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                <img src="~/images/icons8-walking-52.png" />
+                <h3>Desenvolvido </h3>
+                
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                <img src="~/images/icons8-por-que-nós-masculino-48.png" />
+                <h3>Para</h3>
+               
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                <img src="~/images/icons8-casa-64.png" />
+                <h3>Facilitar </h3>
+          
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                <img src="~/images/icons8-kitchen-52.png" />
+                <h3>Em Casa</h3>
+                
+            </div>
+        </div>
+    </section>
+    <div class="row no-gutter">
+        @{ string[] imgs = {
+        "~/images/port1.jpg",
+        "~/images/por3.jpg",
+        "~/images/port4.jpg",
+        "~/images/port6.png",
+        "~/images/port2.jpg"
+        };
+        }
+
+        @foreach (var img in imgs)
+        {
+            <div class="col-xs-2 col-md-2">
+                <a class="portfolio-box">
+                    <img src="@Url.Content(img)" alt="Lanches" width="225" height="220" />
+                </a>
+            </div>
+        }
+    </div>
+    <br />
+
+</div>
+
